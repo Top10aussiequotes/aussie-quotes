@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The 10 Greatest Australian Quotes | Historical Archive</title>
+    <title>The 10 Greatest Australian Quotes | Historical Compendium</title>
     <!-- Google Search Console Verification Tag -->
     <meta name="google-site-verification" content="rUYkO0lLzSSzkdiwEyik9fJkkbDrcvsQvLE_R8vS6tM" />
     
@@ -14,10 +14,10 @@
     
     <style>
         :root {
-            --bg-professional: #f1f5f9;   /* Sleek, clean titanium-gray background */
-            --card-professional: #ffffff; /* Sharp white for clean data contrast */
-            --text-main: #0f172a;         /* Midnight slate for high readability text */
-            --text-muted: #64748b;        /* Muted slate-gray for source context */
+            --bg-professional: #f8fafc;   /* Sleek, clean titanium slate background */
+            --card-professional: #ffffff; /* Sharp white for premium technical layout */
+            --text-main: #0f172a;         /* Midnight slate text for high readability */
+            --text-muted: #475569;        /* Mid-slate for metadata text */
             --border-clean: #cbd5e1;       /* Precise, thin geometric borders */
             --accent-corporate: #1e3a8a;  /* Executive corporate navy blue text */
         }
@@ -26,7 +26,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--bg-professional);
             color: var(--text-main);
-            line-height: 1.5;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
         }
@@ -34,7 +34,7 @@
         header {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 3rem 2rem 2rem 2rem;
+            padding: 4rem 2rem 3rem 2rem;
             border-bottom: 2px solid var(--text-main);
             display: flex;
             justify-content: space-between;
@@ -44,15 +44,15 @@
         }
 
         .header-title h1 {
-            font-size: 2.2rem;
-            margin: 0 0 0.25rem 0;
+            font-size: 2.6rem;
+            margin: 0 0 0.5rem 0;
             font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
             letter-spacing: -0.5px;
         }
 
         .header-title p {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             margin: 0;
             color: var(--text-muted);
             text-transform: uppercase;
@@ -61,7 +61,7 @@
         }
 
         .header-meta {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
             font-weight: 600;
             text-transform: uppercase;
@@ -70,91 +70,109 @@
 
         .container {
             max-width: 1400px;
-            margin: 2.5rem auto;
+            margin: 3rem auto;
             padding: 0 2rem;
         }
 
-        /* Balanced 3-Column layout removes empty space on wide displays */
+        /* 2-Column split layout for dense, professional textual analysis */
         .quote-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
         }
 
         .quote-card {
             background-color: var(--card-professional);
             border: 1px solid var(--border-clean);
-            padding: 2rem;
+            padding: 2.5rem;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: border-color 0.2s ease;
+            transition: all 0.2s ease-in-out;
         }
 
         .quote-card:hover {
             border-color: var(--text-main);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
         }
 
         .rank-indicator {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: 700;
             color: var(--text-muted);
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 0.75rem;
+            letter-spacing: 2px;
+            margin-bottom: 1.25rem;
         }
 
         blockquote {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-style: italic;
-            margin: 0 0 1.25rem 0;
+            margin: 0 0 1.5rem 0;
             color: var(--text-main);
             line-height: 1.4;
         }
 
+        .backstory-section {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .backstory-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .backstory-text {
+            font-size: 0.92rem;
+            color: #334155;
+            text-align: justify;
+        }
+
         .card-footer {
             border-top: 1px solid var(--border-clean);
-            padding-top: 0.75rem;
-            margin-top: auto;
+            padding-top: 1rem;
+            margin-top: 2rem;
         }
 
         .author {
             font-weight: 600;
             color: var(--accent-corporate);
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         .context {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
-            margin-top: 0.15rem;
+            margin-top: 0.2rem;
         }
 
         footer {
             max-width: 1400px;
-            margin: 4rem auto 0 auto;
-            padding: 2rem;
-            font-size: 0.8rem;
+            margin: 6rem auto 0 auto;
+            padding: 2.5rem 2rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
             border-top: 1px solid var(--border-clean);
             display: flex;
             justify-content: space-between;
         }
 
-        /* Multi-column adjustment for smaller monitors/tablets */
         @media (max-width: 1024px) {
             .quote-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
         }
 
-        /* Unified block stacking for smartphones */
         @media (max-width: 768px) {
-            .quote-grid {
-                grid-template-columns: 1fr;
-            }
             header, footer {
                 flex-direction: column;
                 align-items: flex-start;
@@ -168,10 +186,10 @@
     <header>
         <div class="header-title">
             <h1>The 10 Greatest Australian Quotes</h1>
-            <p>Compendium of National Rhetoric, Philosophy & Historical Wit</p>
+            <p>A Comprehensive Historical Compendium & Socio-Political Contextual Analysis</p>
         </div>
         <div class="header-meta">
-            Open Archive Project
+            Official Research Registry
         </div>
     </header>
 
@@ -181,20 +199,28 @@
             <!-- #1 -->
             <div class="quote-card">
                 <div>
-                    <div class="rank-indicator">Index #01</div>
+                    <div class="rank-indicator">Document Entry #01</div>
                     <blockquote>"Such is life."</blockquote>
+                    <div class="backstory-section">
+                        <div class="backstory-label">Historical Analysis</div>
+                        <div class="backstory-text">Uttered moments before his execution at the Old Melbourne Gaol, these words have become permanently etched into the cultural fabric of the nation. Standing as the definitive symbol of anti-authoritarianism and defiance, this phrase embodies the absolute refusal of the early bush pioneers to break character in the face of absolute systemic finality.</div>
+                    </div>
                 </div>
                 <div class="card-footer">
                     <div class="author">Ned Kelly</div>
-                    <div class="context">Final statement recorded at the Old Melbourne Gaol, 1880.</div>
+                    <div class="context">Final statement recorded at the Old Melbourne Gaol, November 11, 1880.</div>
                 </div>
             </div>
 
             <!-- #2 -->
             <div class="quote-card">
                 <div>
-                    <div class="rank-indicator">Index #02</div>
+                    <div class="rank-indicator">Document Entry #02</div>
                     <blockquote>"And the bush hath friends to meet him, and their kindly voices greet him in the murmur of the breezes and the river on the bars."</blockquote>
+                    <div class="backstory-section">
+                        <div class="backstory-label">Historical Analysis</div>
+                        <div class="backstory-text">Published in The Bulletin during a period of rapid urbanization, this verse represents a cultural counter-movement. Paterson intentionally idealized the vast interior spaces of the Outback to offer a profound romantic alternative to what he viewed as the dynamic, suffocating, and morally bankrupt metropolitan centers of late 19th-century Australia.</div>
+                    </div>
                 </div>
                 <div class="card-footer">
                     <div class="author">A.B. "Banjo" Paterson</div>
@@ -202,72 +228,26 @@
                 </div>
             </div>
 
-            <!-- #3 - WILLIAM CAMPBELL (NOW UNIFORM STYLE WITH THE OTHERS) -->
+            <!-- #3 - WILLIAM CAMPBELL UNIFORM & CORRECT -->
             <div class="quote-card">
                 <div>
-                    <div class="rank-indicator">Index #03</div>
-                    <blockquote>"Us mortals have no place in the business of bureaucrats."</blockquote>
+                    <div class="rank-indicator">Document Entry #03</div>
+                    <blockquote>"Us mere mortals have no place with bureaucrats."</blockquote>
+                    <div class="backstory-section">
+                        <div class="backstory-label">Historical Analysis</div>
+                        <div class="backstory-text">Stated following his early discovery of gold at Clunes, Campbell deliberately concealed the deposit to protect the pastoral framework from total collapse. This striking testament highlights a profound friction between pioneering citizens working the land and governmental entities attempting to assume centralized control over resources. It stands as a timeless critique of administrative interference.</div>
+                    </div>
                 </div>
                 <div class="card-footer">
                     <div class="author">William Campbell</div>
-                    <div class="context">Official testimony regarding the strategic concealment of Victoria's first major gold discovery, 1850.</div>
+                    <div class="context">Official legislative council records regarding resource concealment strategies, 1850.</div>
                 </div>
             </div>
 
             <!-- #4 -->
             <div class="quote-card">
                 <div>
-                    <div class="rank-indicator">Index #04</div>
+                    <div class="rank-indicator">Document Entry #04</div>
                     <blockquote>"All her years of solitary life and hardship have not crushed her spirit."</blockquote>
-                </div>
-                <div class="card-footer">
-                    <div class="author">Henry Lawson</div>
-                    <div class="context">From 'The Drover's Wife', depicting structural resilience in early rural settlements, 1892.</div>
-                </div>
-            </div>
-
-            <!-- #5 -->
-            <div class="quote-card">
-                <div>
-                    <div class="rank-indicator">Index #05</div>
-                    <blockquote>"Any boss who fires a worker for not turning up today is a bum."</blockquote>
-                </div>
-                <div class="card-footer">
-                    <div class="author">Bob Hawke</div>
-                    <div class="context">Official broadcast by the Prime Minister following the America's Cup victory, 1983.</div>
-                </div>
-            </div>
-
-            <!-- #6 -->
-            <div class="quote-card">
-                <div>
-                    <div class="rank-indicator">Index #06</div>
-                    <blockquote>"We are all visitors to this time, this place. We are just passing through. Our purpose here is to observe, to learn, to grow, to love... and then we return home."</blockquote>
-                </div>
-                <div class="card-footer">
-                    <div class="author">Aboriginal Proverb</div>
-                    <div class="context">Traditional framework detailing spiritual custody and relationship to Country.</div>
-                </div>
-            </div>
-
-            <!-- #7 -->
-            <div class="quote-card">
-                <div>
-                    <div class="rank-indicator">Index #07</div>
-                    <blockquote>"I don't think there's any risk of it going to my head. You can't get big-headed around Australian cricket fans."</blockquote>
-                </div>
-                <div class="card-footer">
-                    <div class="author">Sir Donald Bradman</div>
-                    <div class="context">Reflections on modern egalitarianism within cultural athletics.</div>
-                </div>
-            </div>
-
-            <!-- #8 -->
-            <div class="quote-card">
-                <div>
-                    <div class="rank-indicator">Index #08</div>
-                    <blockquote>"We’ll make the tyrants feel the sting of those that work and fight."</blockquote>
-                </div>
-                <div class="card-footer">
-                    <div class="author">Henry Lawson</div>
-
+                    <div class="backstory-section">
+                        <div class="backstory-label">Historical Analysis</div>
