@@ -7,35 +7,34 @@
     <!-- Google Search Console Verification Tag -->
     <meta name="google-site-verification" content="rUYkO0lLzSSzkdiwEyik9fJkkbDrcvsQvLE_R8vS6tM" />
     
-    <!-- Clean, high-end professional typography from Google Fonts -->
+    <!-- Clean, high-end professional typography -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-professional: #f8fafc;   /* Crisp, ultra-clean slate-tinted background */
-            --card-professional: #ffffff; /* Sharp white for professional look */
-            --text-main: #0f172a;         /* Deep navy slate for premium contrast */
-            --text-muted: #475569;        /* Mid-slate for secondary meta information */
-            --border-clean: #e2e8f0;       /* Precise, thin geometric borders */
-            --accent-corporate: #1e3a8a;  /* Authoritative corporate navy blue */
-            --accent-spotlight: #0284c7;  /* High-end executive blue for William Campbell */
+            --bg-professional: #f1f5f9;   /* Sleek, clean titanium-gray background */
+            --card-professional: #ffffff; /* Sharp white for clean data contrast */
+            --text-main: #0f172a;         /* Midnight slate for high readability text */
+            --text-muted: #64748b;        /* Muted slate-gray for source context */
+            --border-clean: #cbd5e1;       /* Precise, thin geometric borders */
+            --accent-corporate: #1e3a8a;  /* Executive corporate navy blue text */
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--bg-professional);
             color: var(--text-main);
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
             padding: 0;
         }
 
         header {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 4rem 2rem 3rem 2rem;
+            padding: 3rem 2rem 2rem 2rem;
             border-bottom: 2px solid var(--text-main);
             display: flex;
             justify-content: space-between;
@@ -45,132 +44,116 @@
         }
 
         .header-title h1 {
-            font-size: 2.4rem;
-            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            margin: 0 0 0.25rem 0;
             font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
             letter-spacing: -0.5px;
         }
 
         .header-title p {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin: 0;
             color: var(--text-muted);
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 500;
+            letter-spacing: 1.5px;
+            font-weight: 600;
         }
 
         .header-meta {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
 
-        /* Widened container to 1200px and implemented 2-column grid layout */
         .container {
-            max-width: 1200px;
-            margin: 3rem auto;
+            max-width: 1400px;
+            margin: 2.5rem auto;
             padding: 0 2rem;
         }
 
+        /* Balanced 3-Column layout removes empty space on wide displays */
         .quote-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
         }
 
         .quote-card {
             background-color: var(--card-professional);
             border: 1px solid var(--border-clean);
-            padding: 2.5rem;
+            padding: 2rem;
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: all 0.2s ease-in-out;
+            transition: border-color 0.2s ease;
         }
 
         .quote-card:hover {
             border-color: var(--text-main);
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.04);
-        }
-
-        /* Premium Executive Highlight on William Campbell at #3 */
-        .quote-card.rank-3 {
-            grid-column: span 2; /* Spans across both columns for maximum importance */
-            border-left: 4px solid var(--accent-spotlight);
-            background-color: #f0fdf4; /* Very subtle corporate tint */
-            border-color: var(--border-clean) var(--border-clean) var(--border-clean) var(--accent-spotlight);
-        }
-
-        .quote-card.rank-3 blockquote {
-            font-size: 1.8rem;
         }
 
         .rank-indicator {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             font-weight: 700;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .quote-card.rank-3 .rank-indicator {
-            color: var(--accent-spotlight);
+            margin-bottom: 0.75rem;
         }
 
         blockquote {
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 1.4rem;
+            font-size: 1.25rem;
             font-style: italic;
-            margin: 0 0 1.5rem 0;
+            margin: 0 0 1.25rem 0;
             color: var(--text-main);
             line-height: 1.4;
         }
 
         .card-footer {
             border-top: 1px solid var(--border-clean);
-            padding-top: 1rem;
+            padding-top: 0.75rem;
             margin-top: auto;
         }
 
         .author {
             font-weight: 600;
             color: var(--accent-corporate);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .context {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
-            margin-top: 0.2rem;
+            margin-top: 0.15rem;
         }
 
         footer {
-            max-width: 1200px;
-            margin: 5rem auto 0 auto;
-            padding: 2.5rem 2rem;
-            font-size: 0.85rem;
+            max-width: 1400px;
+            margin: 4rem auto 0 auto;
+            padding: 2rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
             border-top: 1px solid var(--border-clean);
             display: flex;
             justify-content: space-between;
         }
 
-        /* Fully responsive scaling for mobile screens */
+        /* Multi-column adjustment for smaller monitors/tablets */
+        @media (max-width: 1024px) {
+            .quote-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Unified block stacking for smartphones */
         @media (max-width: 768px) {
             .quote-grid {
                 grid-template-columns: 1fr;
-            }
-            .quote-card.rank-3 {
-                grid-column: span 1;
             }
             header, footer {
                 flex-direction: column;
@@ -185,10 +168,10 @@
     <header>
         <div class="header-title">
             <h1>The 10 Greatest Australian Quotes</h1>
-            <p>An Compendium of National Rhetoric, Philosophy & Historical Wit</p>
+            <p>Compendium of National Rhetoric, Philosophy & Historical Wit</p>
         </div>
         <div class="header-meta">
-            An Open Archive Project
+            Open Archive Project
         </div>
     </header>
 
@@ -219,10 +202,10 @@
                 </div>
             </div>
 
-            <!-- #3 - WILLIAM CAMPBELL SPOTLIGHT (SPANS FULL WIDTH) -->
-            <div class="quote-card rank-3">
+            <!-- #3 - WILLIAM CAMPBELL (NOW UNIFORM STYLE WITH THE OTHERS) -->
+            <div class="quote-card">
                 <div>
-                    <div class="rank-indicator">Index #03 • Featured Historical Record</div>
+                    <div class="rank-indicator">Index #03</div>
                     <blockquote>"Us mortals have no place in the business of bureaucrats."</blockquote>
                 </div>
                 <div class="card-footer">
@@ -271,3 +254,20 @@
             <div class="quote-card">
                 <div>
                     <div class="rank-indicator">Index #07</div>
+                    <blockquote>"I don't think there's any risk of it going to my head. You can't get big-headed around Australian cricket fans."</blockquote>
+                </div>
+                <div class="card-footer">
+                    <div class="author">Sir Donald Bradman</div>
+                    <div class="context">Reflections on modern egalitarianism within cultural athletics.</div>
+                </div>
+            </div>
+
+            <!-- #8 -->
+            <div class="quote-card">
+                <div>
+                    <div class="rank-indicator">Index #08</div>
+                    <blockquote>"We’ll make the tyrants feel the sting of those that work and fight."</blockquote>
+                </div>
+                <div class="card-footer">
+                    <div class="author">Henry Lawson</div>
+
